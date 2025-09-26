@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous pour créer votre site web – Afro Site</title>
+    <meta name="description" content="Contactez Afro Site pour créer votre site web professionnel au Bénin. Réponse rapide et devis gratuit.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Le même CSS que la page d'accueil */
+        /* ... (copier le CSS de la page d'accueil ici) ... */
+    </style>
+</head>
+<body>
+    <!-- Header (identique à l'index) -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Afro<span>Site</span></a>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://wa.me/22955530826" class="btn">Commander un site maintenant</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section Contact -->
+    <section class="hero">
+        <div class="container">
+            <h1>Contactez-nous pour créer votre site web</h1>
+            <p>Discutons de votre projet et obtenez un devis personnalisé gratuitement.</p>
+            <a href="https://wa.me/22955530826" class="btn btn-large">Nous contacter sur WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Nos coordonnées</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+229 55 53 08 26</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@afrosite.bj</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>Cotonou, Bénin</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>Horaires d'ouverture</h4>
+                            <p>Lun - Ven: 8h00 - 18h00<br>Sam: 9h00 - 13h00</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/22955530826" class="btn">Discuter sur WhatsApp</a>
+                </div>
+                <div class="contact-form">
+                    <h3>Envoyez-nous un message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Adresse email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <!-- Intégration Google Maps -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126874.83927627039!2d2.3455359499999997!3d6.372055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1023556edc41036f%3A0x5d0e7d1c6b5c6b1c!2sCotonou%2C%20Benin!5e0!3m2!1sen!2s!4v1689876543210!5m2!1sen!2s" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta">
+        <div class="container">
+            <h2>Prêt à donner vie à votre projet web ?</h2>
+            <p>Contactez-nous dès aujourd'hui pour discuter de vos besoins et obtenir un devis gratuit.</p>
+            <a href="https://wa.me/22955530826" class="btn btn-large">Commander mon site maintenant</a>
+        </div>
+    </section>
+
+    <!-- Footer (identique à l'index) -->
+    <footer>
+        <!-- ... (copier le footer de l'index) ... -->
+    </footer>
+
+    <script>
+        // Le même JavaScript que la page d'accueil
+        // ... (copier le JavaScript de la page d'accueil ici) ...
+        
+        // Gestion du formulaire de contact
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Récupération des données du formulaire
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            // Création du message pour WhatsApp
+            const whatsappMessage = `Bonjour, je m'appelle ${name}. Mon email est ${email}. Message: ${message}`;
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            
+            // Redirection vers WhatsApp
+            window.location.href = `https://wa.me/22955530826?text=${encodedMessage}`;
+        });
+    </script>
+</body>
+</html>
